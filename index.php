@@ -1,8 +1,8 @@
 <?php
 require('dis.php');
 
-mysql_connect('localhost', 'aeroportos', 'aeroportos') or die(mysql_error());
-mysql_select_db('aeroportos') or die(mysql_error());
+mysql_connect('localhost', 'aero', 'aero') or die(mysql_error());
+mysql_select_db('aero') or die(mysql_error());
 
 $a = mysql_query('SELECT `IATA` FROM `aeroportos` ORDER BY RAND() LIMIT 1');
 $aa = mysql_fetch_array($a);
